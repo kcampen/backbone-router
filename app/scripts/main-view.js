@@ -23,7 +23,7 @@ var ToppingView = Backbone.View.extend({
 	createTemplate: _.template($('#topping-template').text()),
 
 	initialize: function(){
-		$('.jumbotron').html(this.el);
+		$('.jumbotron').append(this.el);
 
 		this.render();
 	},
@@ -31,6 +31,7 @@ var ToppingView = Backbone.View.extend({
 	render: function(){
 
 		var renderTemplate = this.createTemplate(this.model.attributes);
+		console.log('renderTemplate is', renderTemplate)
 		this.$el.html(renderTemplate)
 
 	}
