@@ -1,6 +1,6 @@
 var Za = Backbone.Model.extend({
 
-	idAttribute: "_.id",
+	// idAttribute: "_.id",
 
 	defaults: {
 		pizza: "cheese",

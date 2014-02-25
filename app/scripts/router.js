@@ -1,8 +1,8 @@
 var MainRouter = Backbone.Router.extend({
 
 	routes: {
-		"about" : "aboutPage",
-		"about/:name" : "aboutPage"
+		"pizza" : "aboutPage",
+		"pizza/:name" : "aboutPage"
 	},
 
 	initialize: function(){
@@ -14,7 +14,7 @@ var MainRouter = Backbone.Router.extend({
 			console.log('heres a page about', name);
 		} else {
 
-		console.log('you are at the about page');
+		console.log('you are at the pizza page');
 		}
 	}
 

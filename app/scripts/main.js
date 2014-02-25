@@ -6,9 +6,23 @@ $(document).ready(function(){
 
 	Backbone.history.start();
 
+		// new MainView ({model: za});
+	})
 
-});
 
-$('.cheese-js').on('click', function(){
+
+
+$('.pizza-btn').on('click', function(){
+	new PizzaView()
 	
 })
+
+$('.jumbotron').on('click', 'cheese-btn', 'pep-btn', function(){
+	
+	var toppings = new ZaCollection(data)
+
+	toppings.each(function(za){
+		new ToppingView({model: toppings});
+})
+
+});
